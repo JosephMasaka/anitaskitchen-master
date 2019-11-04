@@ -1,0 +1,338 @@
+body {
+    font-family: ;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+.jumbotron {
+        margin-bottom: 0;
+        border-radius: 0;
+}
+
+.showcase{
+    background: url('../assets/backgrounds/landing.jpg') no-repeat center center/ cover;
+}
+
+.showcase-header{
+    margin: 6px 0;
+    font-size: 32px !important;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#men{
+    height: 180px;
+    font-size: 25px;
+}
+
+.img-1 p, .img-2 p, .img-3 p{
+    color: #fff;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.images_meals{
+    transition: all .5s ease-in-out;
+
+}
+
+.images_meals:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+
+.margin{
+    margin: auto;
+    background-color: #fff;
+}
+
+.party, .happy{
+    height: 50%;
+    width: 100%;
+    margin: 0 !important;
+}
+
+.party p, .happy p{
+    margin: 0 !important;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.party{
+    background-color: #E3E3E3;
+}
+
+.happy{
+    background-color: #e75937;
+    color: #fff;
+}
+
+.overflow_hidden{
+    overflow: hidden;
+}
+
+.img-1{
+    background: url("../assets/foodtop/breakfast.jpg") no-repeat center center/cover;
+}
+
+.img-2{
+    background: url("../assets/foodtop/lunch.jpg") no-repeat center center/cover;
+}
+
+.img-3{
+    background: url("../assets/foodtop/dinner.jpg") no-repeat center center/cover;
+}
+
+.span-bars{
+    position: absolute;
+    left: 6%;
+    top: 6%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+}
+
+#bars_1{
+    top: 10px;
+}
+
+#bars_2{
+    top: 20px;
+}
+
+#bars_3{
+    top: 30px;
+}
+
+.bars{
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: #fff;
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.span-bars:hover .bars{
+    background: #fff;
+    opacity: .5;
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+.rotate-1{
+    transform: rotate(-45deg) translate(-5px, 0px);
+    width: 20px;
+}
+
+.rotate-2{
+    transform: rotate(45deg) translate(-5px, 0px);
+    width: 20px;
+}
+
+.rotate-3{
+    width: 38px;
+}
+
+
+.logo {
+    text-align: center;
+}
+
+.featurette-heading {
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+.img-thumbnail {
+        width: 525px;
+        height: 430px;
+        box-shadow: -1px 1px 5px 4px #E3E3E3;
+    }
+
+.testimonials {
+    text-align: center;
+    margin: 75px 100px 75px 100px;
+    border: 10px solid #fff;
+    box-shadow: -1px 1px 5px 4px #E3E3E3;
+    padding: 20px 20px 20px 20px;
+}
+
+#col {
+    border-left: 0.1pt solid grey;
+}
+
+.jumbotron1 {
+    background-image: url('../assets/backgrounds/foodsBg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255,255,255, .2);
+    background-blend-mode: color;
+}
+
+#drinks {
+    padding: 0 10% 0 45px;
+}
+
+h1, h4{
+    line-height: 2;
+    margin: 0;
+}
+
+.col-md-3, .col-md-12{
+    padding: 0;
+}
+
+.fast_food_content{
+    padding-left: 10%;
+    font-size: 18px;
+    color: rgba(0,0,0,.8);
+}
+
+.fast_food_content p{
+    font-weight: 500;
+}
+
+#fast-foods-drink{
+    text-align: right;
+}
+
+#fast-foods-drinks .img-thumbnail img:first-child{
+    margin-top: 15px;
+}
+
+#fast-foods-drinks .img-thumbnail img:last-child{
+    margin-bottom: 15px;
+}
+
+#fast-foods-drink .img-thumbnail img{
+    margin-top: 15px;
+}
+
+#fast-foods-drink .img-thumbnail img{
+    margin-bottom: 15px;
+}
+
+button[type=button]{
+    background-color: unset;
+    border: 1px solid #e75937;
+    color: #e75937;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.fast-foods{
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    padding-top: 7%;
+    position: relative;
+}
+
+.menu-tabs{
+    background-color: #fff;
+    height: 13%;
+    color: rgba(0,0,0,.7);
+    overflow: hidden;
+}
+
+.nav-tabs{
+    text-align: center;
+    height: 100%;
+    background: rgb(211, 211, 211);
+}
+
+#menu-list {
+    height: 600px;
+}
+
+#menu-list a{
+    height: 100%;
+    font-size: 21px;
+    font-weight: 500;
+    padding-top: 15px;
+    
+}
+
+#menu-list a:active{
+    border: none;
+    background-color: #fff;
+    color: #e75937;
+}
+#menu-list .nav-item{
+    
+}
+
+.active{
+    border: none;
+    background-color: #fff;
+    color: #e75937;
+}
+
+.nav-link:hover{
+    border-color: white white white !important;
+    color: #e75937;
+    background-color: ;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    border: none;
+    color: #e75937;
+}
+
+.menu-tabs .row{
+    height: 100%;
+}
+
+.tab-items {
+    height: 330px;
+    background-color: #fff;
+    margin-left: 0px;
+    overflow: hidden;
+    padding: 30px 0 0 0px;
+    align-items: end;
+    justify-content: space-evenly;
+    display: none;
+}
+
+.fast-foods .panel{
+    text-align: center;
+}
+
+
+.panel p {
+    padding: 15px;
+    font-size: 16px;
+    color: rgb(231, 89, 55);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.chevron{
+    position: absolute;
+    height: 30px;
+    transform: translate(1%, -64%);
+    top: 50%;
+    cursor: pointer;
+}
+
+.chevron-1{
+    left: 3%;
+}
+
+.chevron-2{
+    right: 2.3%;
+}
+
+.newsletter{
+    background: url('../assets/backgrounds/subscribe.jpg') center center/cover;
+}
+
+.display{
+    display: flex;
+}
+
