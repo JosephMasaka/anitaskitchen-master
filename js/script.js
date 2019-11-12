@@ -11,10 +11,6 @@ $('.span-bars').click(function(){
 
 const listItems = document.querySelectorAll('.nav-item');const tabContentItems = document.querySelectorAll('.tab-items');
 
-$(document).ready(function(){
-    listItems.forEach(item => item.classList.add('active'));
-    listItems.forEach(item => item.classList.remove('active')); 
-});
 
 
 function selectItem(e){
@@ -35,28 +31,8 @@ function removeDisplay(){
 listItems.forEach(item => item.addEventListener('click', selectItem));
 
 /* owl carousel */
+
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel();
 });
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:2,
-            nav:false
-        },
-        1000:{
-            items:3,
-            nav:true,
-            loop:false
-        }
-    }
-})
 

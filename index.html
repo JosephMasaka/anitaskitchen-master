@@ -10,6 +10,9 @@
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
 </head>
 
@@ -31,7 +34,7 @@
 
     <div class="container-fluid">
         <div class="row" id='men'>
-            <div class="col-xs-3 col-sm-3 col-md-3 overflow_hidden images_text">
+            <div class="col overflow_hidden images_text">
                 <div class="party">
                     <p>happy hour</p>
                 </div>
@@ -39,28 +42,28 @@
                     <p>party time</p>
                 </div>
             </div>
-            <div class="col-xs-3 col-sm-3 col-md-3 overflow_hidden img-1 images_meals">
+            <div class="col overflow_hidden img-1 images_meals">
                 <p><i>Breakfast</i></p>
             </div>
-            <div class="col-xs-3 col-sm-3 col-md-3 img-2 images_meals">
+            <div class="col img-2 images_meals">
                 <p><i>Lunch</i></p>
             </div>
-            <div class="col-xs-3 col-sm-3 col-md-3 overflow_hidden img-3 images_meals">
+            <div class="col overflow_hidden img-3 images_meals">
                 <p><i>Dinner</i></p>
             </div>
         </div>
     </div>
-    <!--thumnail fast food and drinks section-->
+    <!--thumbnail fast food and drinks section-->
 
-    <div id="fast-foods-drinks" class="row container jumbotron margin">
-        <div class="col-md-6 img-thumbnail">
+    <div id="fast-foods-drinks" class="row container jumbotron margin margin-top">
+        <div class="col img-thumbnail">
             <img src="assets/fastFood1.jpg" alt="">
             <img src="assets/fastFood2.jpg" alt="">
         </div>
 
-        <div class="col-md-6 fast_food_content" id="">
+        <div class="col fast_food_content" id="fast-foods">
             <h1 class="featurette-heading text-capitalize">fast food</h1>
-            <h4>You'll love our delicious fast food</h4>
+            <h2>You'll love our delicious fast food</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -69,14 +72,16 @@
                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                 non proident, sunt in.
             </p>
-            <button type="button" name="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-arrow-right"></span>view gallery</button>
+            <div class="primary-button">
+                <a href="" download>View Gallery</a>
+            </div>
         </div>
     </div>
 
-    <div id="fast-foods-drink" class="row container jumbotron margin">
-        <div class="col-md-6 fast_food_content" id="drinks">
+    <div id="fast-foods-drink" class="row container jumbotron margin margin-bottom">
+        <div class="col fast_food_content" id="drinks">
             <h1 class="featurette-heading">Drinks</h1>
-            <h4>we also produce delicious drinks</h4>
+            <h2>we also produce delicious drinks</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -85,10 +90,12 @@
                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                 non proident, sunt in.
             </p>
-            <button type="button" name="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-arrow-right"></span>view gallery</button>
+            <div class="primary-button">
+                <a href="pdf/Masaka Joseph C.V.pdf" download>View Gallery</a>
+            </div>
         </div>
 
-        <div class="col-md-6 img-thumbnail">
+        <div class="col img-thumbnail">
             <img src="assets/drink1.jpg" alt=""><img src="assets/drink2.jpg" alt="">
         </div>
 
@@ -101,16 +108,16 @@
         <div class="fast-foods">
             <div class="menu-tabs">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col">
                         <ul class="nav nav-tabs">
-                            <li id="tab-1" class="nav-item col-md-3 active"><a data-toggle="tab" class="nav-link" >Fast Food</a></li>
-                            <li id="tab-2" class="nav-item col-md-3">
+                            <li id="tab-1" class="nav-item col active"><a data-toggle="tab" class="nav-link" >Fast Food</a></li>
+                            <li id="tab-2" class="nav-item col">
                                 <a data-toggle="tab" class="nav-link">Drinks</a>
                             </li>
-                            <li id="tab-3" class="nav-item col-md-3">
+                            <li id="tab-3" class="nav-item col">
                                 <a data-toggle="tab" class="nav-link">Chicken</a>
                             </li>
-                            <li id="tab-4" class="nav-item col-md-3">
+                            <li id="tab-4" class="nav-item col">
                                 <a data-toggle="tab" class="nav-link">Rice</a>
                             </li>
                         </ul>
@@ -118,7 +125,72 @@
                 </div>
             </div>
 
-            <div class="container tab-content tab-items display" id="tab-1-content">
+            <div class="container-fluid tab-content tab-items display responsiveClass-1300" id="tab-1-content">
+                <div class="owl-carousel owl-theme">
+                    <div class="item item-1">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/fastfood/chickenBurger.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Chicken Burger</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-2">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/fastfood/beefBurger.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Beef Burger</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-3">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/fastfood/chickenPizza.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Chicken Pizza</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-4">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/fastfood/chicken-close-up-crispy.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Chicken Crispy</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-5">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/fastfood/biryani-chicken-close-up.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Biryani Chicken </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-6">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/fastfood/cook-cooking-cuisine.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Chicken Crispy</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item-7">
+                        <div class="card" style="width: 100%;">
+                            <img src="assets/fastfood/clean-eating-close-up-cuisine.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Chicken Crispy</h5>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="owl-dots">
+                        <div class="owl-dot active"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                </div>
+            </div>
+            <div class="container-fluid tab-content tab-items " id="tab-2-content">
                 <div class="owl-carousel owl-theme">
                     <div class="item item-1">
                         <div class="card" style="width: 100%;">
@@ -178,7 +250,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container tab-content tab-items " id="tab-2-content">
+            <div class="container-fluid tab-content tab-items " id="tab-3-content">
                 <div class="owl-carousel owl-theme">
                     <div class="item item-1">
                         <div class="card" style="width: 100%;">
@@ -238,67 +310,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container tab-content tab-items " id="tab-3-content">
-                <div class="owl-carousel owl-theme">
-                    <div class="item item-1">
-                        <div class="card" style="width: 100%;">
-                            <img src="assets/fastfood/chickenBurger.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Chicken Burger</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item item-2">
-                        <div class="card" style="width: 100%;">
-                            <img src="assets/fastfood/beefBurger.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Beef Burger</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item item-3">
-                        <div class="card" style="width: 100%;">
-                            <img src="assets/fastfood/chickenPizza.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Chicken Pizza</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item item-4">
-                        <div class="card" style="width: 100%;">
-                            <img src="assets/fastfood/chicken-close-up-crispy.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Chicken Crispy</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item item-5">
-                        <div class="card" style="width: 100%;">
-                            <img src="assets/fastfood/biryani-chicken-close-up.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Biryani Chicken </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item item-6">
-                        <div class="card" style="width: 100%;">
-                            <img src="assets/fastfood/cook-cooking-cuisine.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Chicken Crispy</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item item-7">
-                        <div class="card" style="width: 100%;">
-                            <img src="assets/fastfood/clean-eating-close-up-cuisine.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Chicken Crispy</h5>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container tab-content tab-items " id="tab-4-content">
+            <div class="container-fluid tab-content tab-items " id="tab-4-content">
                 <div class="owl-carousel owl-theme">
                     <div class="item item-1">
                         <div class="card" style="width: 100%;">
@@ -370,14 +382,26 @@
                        <h4>Our happy customers</h4>
                        <h6>George Richard</h6>
                         <p class="width">Great food! Menu is awesome. There foods are not only great but also in the right price. I'll highly recommend them :)</p>
-                        <div class="row overflow_hidden">
-                            <div class="owl-carousel owl-theme">
-                                <img class="mySlides" src="assets/customers/p1.png">
-                                <img class="mySlides" src="assets/customers/p2.png">
-                                <img class="mySlides" src="assets/customers/p1.png">
-                                <img class="mySlides" src="assets/customers/p1.png">
-                                <img class="mySlides" src="assets/customers/p2.png">
-                                <img class="mySlides" src="assets/customers/p1.png">
+                        <div class="row overflow_hidden ">
+                            <div class="owl-carousel owl-theme my-carousel">
+                                <div class="item active">
+                                    <img class="mySlides" src="assets/customers/p1.png">
+                                </div>
+                                <div class="item">
+                                    <img class="mySlides" src="assets/customers/p1.png">
+                                </div>
+                                <div class="item">
+                                    <img class="mySlides" src="assets/customers/p1.png">
+                                </div>
+                                <div class="item">
+                                    <img class="mySlides" src="assets/customers/p1.png">
+                                </div>
+                                <div class="item">
+                                    <img class="mySlides" src="assets/customers/p1.png">
+                                </div>
+                                <div class="item">
+                                    <img class="mySlides" src="assets/customers/p1.png">
+                                </div>
                             </div>
                         </div>
                         
@@ -434,6 +458,65 @@
 <script src="js/script.js">
 </script>
 <script src="OwlCarousel/owl.carousel.min.js"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:false,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        500:{
+            items:1,
+            nav:false,
+            margin: 20
+        },
+        600:{
+            items:1,
+            nav:false,
+            margin: 0
+        },
+        700:{
+            items:2,
+            nav:true
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+    }
+})
+
+$('.testimonials .owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:1,
+            nav:false,
+            margin: 0
+        },
+        700:{
+            margin:25,
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:true,
+            loop:false
+        }
+    }
+})
+</script>
 </body>
 
 </html>

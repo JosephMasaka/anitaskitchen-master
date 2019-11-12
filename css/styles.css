@@ -4,13 +4,25 @@ body {
     overflow-x: hidden;
 }
 
+a:active{
+    color: #e75937;
+}
+
+.nav-tabs>li.active>a{
+    border: none;
+}
+
 .jumbotron {
         margin-bottom: 0;
         border-radius: 0;
 }
+.col{
+    padding: 0;
+}
 
 .showcase{
     background: url('../assets/backgrounds/landing.jpg') no-repeat center center/ cover;
+    padding-bottom: 72px;
 }
 
 .showcase-header{
@@ -24,6 +36,11 @@ body {
     height: 180px;
     font-size: 25px;
 }
+
+#men .col{
+    padding: 0;
+}
+
 
 .img-1 p, .img-2 p, .img-3 p{
     color: #fff;
@@ -44,6 +61,14 @@ body {
 .margin{
     margin: auto;
     background-color: #fff;
+}
+
+.margin-top{
+    margin-top: 50px;
+}
+
+.margin-bottom{
+    margin-bottom: 50px;
 }
 
 .party, .happy{
@@ -170,6 +195,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(255,255,255, .2);
+    background-size: cover;
     background-blend-mode: color;
 }
 
@@ -193,7 +219,8 @@ h1, h4{
 }
 
 .fast_food_content p{
-    font-weight: 500;
+    font-weight: 300;
+    font-size: 19px;
 }
 
 #fast-foods-drink{
@@ -214,6 +241,11 @@ h1, h4{
 
 #fast-foods-drink .img-thumbnail img{
     margin-bottom: 15px;
+    width: 50%;
+}
+
+#fast-foods-drink .img-thumbnail {
+    padding: 20px;
 }
 
 button[type=button]{
@@ -303,6 +335,9 @@ button[type=button]{
     text-align: center;
 }
 
+#fast-foods-drinks .img-thumbnail{
+    padding: 5px 15px 15px 15px;
+}
 
 .panel p {
     padding: 15px;
@@ -345,7 +380,7 @@ button[type=button]{
 }
 
 .owl-carousel:first-child {
-    padding-left: 7%;
+    padding-left: 5%;
 }
 
 .owl-item{
@@ -387,6 +422,10 @@ button[role=presentation] {
     font-size: 15px;
     font-weight: bolder;
     letter-spacing: 1px;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin: 0 0 0 -27px !important;
 }
 
 .width{
@@ -492,7 +531,10 @@ button[role=presentation] {
     width: 58px;
 }
 
-.testimonials .row{}
+.testimonials .item{
+    height: auto;
+    width: 10rem;
+}
 
 .overflow_hidden{
     overflow: hidden;
@@ -500,4 +542,403 @@ button[role=presentation] {
 
 .testimonials .owl-item{
     width: 58.932px !important;
+}
+
+.my-carousel{
+    width: 17%;
+    margin: auto;
+    height: 50px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.owl-stage{
+    display: flex;
+}
+
+.my-carousel .owl-item{
+    padding: 0 10px
+}
+
+.primary-button a {
+    display: inline-block;
+    background-color: #e75937;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 12px 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+}
+
+.primary-button a:hover {
+    background-color: transparent;
+    color: #e75937;
+    border: 1px solid #e75937;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+}
+
+/** media queries **/
+@media screen and (max-width: 1200px){
+    #fast-foods-drinks .img-thumbnail img{
+        width: 400px;
+        height: 195px;
+    }
+
+    #fast-foods-drink .img-thumbnail img{
+        height: 370px;
+    }
+
+    .owl-carousel:first-child {
+        padding-left: 6%;
+    }
+}
+
+@media screen and (max-width: 1096px){
+    .owl-carousel:first-child {
+        padding-left: 3%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .owl-carousel:first-child {
+        padding-left: 8%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    #fast-foods-drinks .img-thumbnail img {
+        width: 290px;
+        height: 180px;
+    }
+
+    #fast-foods-drinks .img-thumbnail {
+        padding-left: 25px;
+    }
+
+    .jumbotron h1 {
+        font-size: 58px;
+    }
+
+    .fast_food_content p {
+        font-size: 15px;
+    }
+
+    #fast-foods-drink .img-thumbnail img {
+        width: 140px;
+        height: 350px;
+    }
+
+    #drinks {
+        padding: 0 10% 0 0px;
+    }
+
+    .img-thumbnail {
+        height: 400px;
+    }
+
+    #men {
+        height: 150px;
+    }
+
+    .showcase {
+        padding-bottom: 23px;
+    }
+}
+
+@media screen and (max-width: 796px){
+    .newsletter .form-group {
+        width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
+
+    .owl-carousel:first-child {
+        padding-left: 4%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer .col-md-3{
+        margin-left: 30%;
+    }
+
+    #fast-foods-drinks .img-thumbnail img {
+        width: 450px;
+    }
+
+    .fast_food_content {
+        margin-top: 50px;
+    }
+
+    #fast-foods-drink .img-thumbnail img {
+        width: 250px;
+    }
+
+    .owl-carousel:first-child {
+        padding-left: 7%;
+    }
+
+    #fast-foods-drink {
+        text-align: left;
+        display: block;
+    }
+
+    #fast-foods-drink .img-thumbnail img {
+        width: 226px;
+    }
+
+    #fast-foods-drink .img-thumbnail:second-child {
+        float: right;
+    }
+
+    #drinks {
+        padding: 0 0% 0 10%;
+    }
+
+    #fast-foods-drink .fast_food_content{
+        margin-bottom: 50px;
+    }
+
+    #menu-list a {
+        font-size: 18px;
+    }
+
+    .owl-carousel:first-child {
+        padding-left: 3%;
+    }
+
+    .fast-foods {
+        padding-top: 14%;
+    }
+
+    .testimonials .col-md-7{
+        margin-bottom: 50px;
+    }
+
+    .footer .col-md-3 {
+        margin-left: 45%;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .owl-carousel:first-child {
+        padding-left: 25%;
+    }
+
+    #menu-list a {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #men {
+        height: 110px;
+        font-size: 19px;
+    }
+
+    .owl-carousel:first-child {
+        padding-left: 22%;
+    }
+
+    .owl-dots{
+        margin-left: -108px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #men .col{
+        padding: 0;
+    }
+
+    #fast-foods-drinks .img-thumbnail img {
+        width: 445px;
+    }
+
+    .owl-carousel:first-child {
+        padding-left: 18%;
+    }
+
+    .img-thumbnail {
+        width: 555px;
+    }
+
+    #fast-foods-drink .img-thumbnail img {
+        width: 50%;
+    }
+
+    #fast-foods-drink .img-thumbnail {
+        padding-right: 20px;
+        padding-left: 25px;
+    }
+
+    #menu-list a {
+        font-size: 15px;
+    }
+
+    .showcase-header {
+        font-size: 24px !important;
+    }
+
+    .footer .col-md-3 {
+        margin-left: 40%;
+        width: 50%;
+    }
+
+    #tab-1{
+        padding-left: 10px;
+    }
+
+    .owl-dots {
+        margin-left: -60px;
+    }
+
+    .owl-theme .owl-nav {
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .owl-carousel:first-child {
+        padding-left: 16%;
+    }
+
+    #fast-foods-drinks .img-thumbnail img {
+        width: 415px;
+    }
+
+    #men {
+        height: 90px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .owl-carousel:first-child {
+        padding-left: 16%;
+    }
+
+    #fast-foods-drinks .img-thumbnail img {
+        width: 380px;
+    }
+
+    .testimonials {
+        margin: 75px 50px 75px 50px;
+    }
+
+    .newsletter .container {
+        width: 80%;
+    }
+
+    .footer .col-md-3 {
+        margin-left: 43%;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    #fast-foods-drinks .img-thumbnail img {
+        max-width: 345px;
+    }
+
+    .fast_food_content {
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #fast-foods-drinks .img-thumbnail img {
+        max-width: 330px;
+    }
+
+    .owl-carousel:first-child {
+        padding-left: 10%;
+    }
+
+    .img-1 p, .img-2 p, .img-3 p {
+        margin-top: 35%;
+    }
+
+    .jumbotron h1 {
+        font-size: 40px;
+    }
+
+    .footer .col-md-3 {
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .footer .col-md-3 {
+        width: 70%;
+    }
+
+    .party, .happy {
+        font-size: 15px;
+    }
+
+    #fast-foods-drinks .img-thumbnail img {
+        max-width: 310px;
+    }
+
+    .owl-carousel:first-child {
+        padding-left: 7%;
+    }
+
+    .testimonials {
+        margin: 75px 30px 75px 30px;
+    }
+
+    .owl-dots {
+        margin-left: -15px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    #fast-foods-drinks .img-thumbnail img {
+        max-width: 290px;
+    }
+
+    .fast-foods {
+        width: 90%;
+    }
+
+    .owl-carousel:first-child {
+        padding-left: 9%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .owl-carousel .owl-item img {
+        width: 95% !important;
+    }
+}
+
+@media screen and (max-width: 340px){
+    #fast-foods-drinks .img-thumbnail img {
+        max-width: 270px;
+    }
+
+    .footer .col-md-3 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #fast-foods-drinks .img-thumbnail img {
+        max-width: 255px;
+    }
+
+    #men {
+        height: 90px;
+        font-size: 16px;
+    }
 }
