@@ -252,7 +252,7 @@ button[type=button]{
     background-color: unset;
     border: 1px solid #e75937;
     color: #e75937;
-    font-weight: 500;
+    font-weight: 300;
     text-transform: uppercase;
 }
 
@@ -375,8 +375,8 @@ button[type=button]{
 
 
 .item {
-    height: 26rem;
-    width: 26rem;
+    height: 15rem;
+    width: 15rem;
 }
 
 .owl-carousel:first-child {
@@ -395,16 +395,22 @@ button[type=button]{
 button[role=presentation] {
     border: none;
     position: absolute;
-    font-size: 60px;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+button[role=presentation]:hover{
+    color: #e75937;
+    opacity: .5;
 }
 
 .owl-prev{
-    top:42%;
+    top:30%;
     left: 2%;
 }
 
 .owl-next{
-    top:42%;
+    top:30%;
     right: 2%;
 }
 
@@ -425,7 +431,7 @@ button[role=presentation] {
 }
 
 .owl-theme .owl-nav.disabled+.owl-dots {
-    margin: 0 0 0 -27px !important;
+    margin: 0 0 0 -92px !important;
 }
 
 .width{
@@ -514,6 +520,7 @@ button[role=presentation] {
     margin: 10px 5px;
     letter-spacing: 1px;
     font-weight: 500;
+    font-size: 20px;
 }
 
 .footer .row .row img{
@@ -533,7 +540,11 @@ button[role=presentation] {
 
 .testimonials .item{
     height: auto;
-    width: 10rem;
+    width: 100%;
+}
+
+.testimonials .item img{
+    height: auto;
 }
 
 .overflow_hidden{
@@ -545,11 +556,15 @@ button[role=presentation] {
 }
 
 .my-carousel{
-    width: 17%;
+    width: 100%;
     margin: auto;
-    height: 50px;
+    height: 100%;
     padding: 0;
     overflow: hidden;
+}
+
+.testimonials .my-carousel .active{
+    color: #000;
 }
 
 .owl-stage{
@@ -557,7 +572,12 @@ button[role=presentation] {
 }
 
 .my-carousel .owl-item{
-    padding: 0 10px
+    padding: 0 10px;
+    width: 610px !important;
+}
+
+.testimonials .col-md-7{
+    height: 250px;
 }
 
 .primary-button a {
@@ -583,6 +603,12 @@ button[role=presentation] {
 }
 
 /** media queries **/
+@media screen and (max-width: 1256px){
+    .newsletter button {
+        width: 33%;
+    }
+}
+
 @media screen and (max-width: 1200px){
     #fast-foods-drinks .img-thumbnail img{
         width: 400px;
@@ -608,6 +634,10 @@ button[role=presentation] {
     .owl-carousel:first-child {
         padding-left: 8%;
     }
+
+    .footer .col-md-3 {
+        min-width: 35% !important;
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -629,7 +659,7 @@ button[role=presentation] {
     }
 
     #fast-foods-drink .img-thumbnail img {
-        width: 140px;
+        width: 50%;
         height: 350px;
     }
 
@@ -648,13 +678,19 @@ button[role=presentation] {
     .showcase {
         padding-bottom: 23px;
     }
-}
 
-@media screen and (max-width: 796px){
     .newsletter .form-group {
         width: 100%;
         margin-left: 0 !important;
     }
+
+    .newsletter button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 796px){
+    
 
     .newsletter button {
         width: 100%;
@@ -671,7 +707,7 @@ button[role=presentation] {
     }
 
     #fast-foods-drinks .img-thumbnail img {
-        width: 450px;
+        width: 425px;
     }
 
     .fast_food_content {
@@ -692,7 +728,7 @@ button[role=presentation] {
     }
 
     #fast-foods-drink .img-thumbnail img {
-        width: 226px;
+        width: 50%;
     }
 
     #fast-foods-drink .img-thumbnail:second-child {
@@ -804,6 +840,10 @@ button[role=presentation] {
     .owl-theme .owl-nav {
         margin-top: 0 !important;
     }
+
+    .testimonials .col-md-7 {
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -819,6 +859,18 @@ button[role=presentation] {
         height: 90px;
         font-size: 18px;
     }
+
+    .testimonials .col-md-7 {
+        height: 380px;
+    }
+
+    .testimonials .col-md-5 {
+        padding-left: 5px;
+    }
+
+    .testimonials {
+        padding: 20px 0px 20px 5px;
+    }
 }
 
 @media screen and (max-width: 460px){
@@ -828,6 +880,10 @@ button[role=presentation] {
 
     #fast-foods-drinks .img-thumbnail img {
         width: 380px;
+    }
+
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin: 0 0 0 -60px !important;
     }
 
     .testimonials {
@@ -859,6 +915,14 @@ button[role=presentation] {
         max-width: 330px;
     }
 
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin: 0 0 0 -30px !important;
+    }
+
+    #fast-foods-drinks .img-thumbnail img {
+        max-width: 315px;
+    }
+    
     .owl-carousel:first-child {
         padding-left: 10%;
     }
@@ -900,11 +964,19 @@ button[role=presentation] {
     .owl-dots {
         margin-left: -15px;
     }
+
+    #fast-foods-drinks .img-thumbnail img {
+        max-width: 290px;
+    }
+
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin: 0 0 0 -30px !important;
+    }
 }
 
 @media screen and (max-width: 360px){
     #fast-foods-drinks .img-thumbnail img {
-        max-width: 290px;
+        max-width: 275px;
     }
 
     .fast-foods {
@@ -917,6 +989,10 @@ button[role=presentation] {
 }
 
 @media screen and (max-width: 350px){
+    #fast-foods-drinks .img-thumbnail img {
+        max-width: 265px;
+    }
+
     .owl-carousel .owl-item img {
         width: 95% !important;
     }
@@ -924,7 +1000,7 @@ button[role=presentation] {
 
 @media screen and (max-width: 340px){
     #fast-foods-drinks .img-thumbnail img {
-        max-width: 270px;
+        max-width: 260px;
     }
 
     .footer .col-md-3 {
@@ -934,7 +1010,7 @@ button[role=presentation] {
 
 @media screen and (max-width: 320px){
     #fast-foods-drinks .img-thumbnail img {
-        max-width: 255px;
+        max-width: 240px;
     }
 
     #men {

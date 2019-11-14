@@ -91,7 +91,7 @@
                 non proident, sunt in.
             </p>
             <div class="primary-button">
-                <a href="pdf/Masaka Joseph C.V.pdf" download>View Gallery</a>
+                <a href="" download>View Gallery</a>
             </div>
         </div>
 
@@ -379,39 +379,31 @@
               <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-7">
-                       <h4>Our happy customers</h4>
-                       <h6>George Richard</h6>
-                        <p class="width">Great food! Menu is awesome. There foods are not only great but also in the right price. I'll highly recommend them :)</p>
-                        <div class="row overflow_hidden ">
-                            <div class="owl-carousel owl-theme my-carousel">
-                                <div class="item active">
-                                    <img class="mySlides" src="assets/customers/p1.png">
-                                </div>
-                                <div class="item">
-                                    <img class="mySlides" src="assets/customers/p1.png">
-                                </div>
-                                <div class="item">
-                                    <img class="mySlides" src="assets/customers/p1.png">
-                                </div>
-                                <div class="item">
-                                    <img class="mySlides" src="assets/customers/p1.png">
-                                </div>
-                                <div class="item">
-                                    <img class="mySlides" src="assets/customers/p1.png">
-                                </div>
-                                <div class="item">
-                                    <img class="mySlides" src="assets/customers/p1.png">
-                                </div>
+                        <h4 class="my-2">Our happy customers</h4>
+                        <div class="my-carousel">
+                            <div class="item">
+                                <img class="mySlides my-2" src="assets/customers/p1.png">
+                                <h6 class="my-2">Mitchelle Nelson</h6>
+                                <p class="width">Great food! Menu is awesome. There foods are not only great but also in the right price. I'll highly recommend them :)</p>
+                            </div>
+                            <div class="item">
+                                <img class="mySlides" src="assets/customers/p2.png">
+                                <h6>George Richard</h6>
+                                <p class="width">Great food! Menu is awesome. There foods are not only great but also in the right price. I'll highly recommend them :)</p>
+                            </div>
+                            <div class="item">
+                                <img class="mySlides" src="assets/customers/p3.png">
+                                <h6>Hiro Nakamura</h6>
+                                <p class="width">Great food! Menu is awesome. There foods are not only great but also in the right price. I'll highly recommend them :)</p>
                             </div>
                         </div>
-                        
                     </div>
 
 
                     <div class="col-md-5" id="col">
                         <h4>About Menu</h4>
                         <p class="width">We are menu a little team of 7 members
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quo.</p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit ratione ex natus sed temporibus officiis reprehenderit magnam impedit debitis repellendus?</p>
 
                         </div>
                     </div>
@@ -459,38 +451,10 @@
 </script>
 <script src="OwlCarousel/owl.carousel.min.js"></script>
 <script>
-$('.owl-carousel').owlCarousel({
-    loop:false,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        500:{
-            items:1,
-            nav:false,
-            margin: 20
-        },
-        600:{
-            items:1,
-            nav:false,
-            margin: 0
-        },
-        700:{
-            items:2,
-            nav:true
-        },
-        1000:{
-            items:3,
-            nav:true,
-            loop:false
-        }
-    }
-})
 
-$('.testimonials .owl-carousel').owlCarousel({
+var myCarousel = $('.my-carousel');
+myCarousel.owlCarousel({
+    autoplay:true,
     loop:true,
     margin:10,
     responsiveClass:true,
@@ -511,11 +475,46 @@ $('.testimonials .owl-carousel').owlCarousel({
         },
         1000:{
             items:1,
-            nav:true,
-            loop:false
+            nav:false,
+            loop:true
+        }
+    }
+});
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    lazyLoadEager: 5,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        500:{
+            items:1,
+            nav:false,
+            margin: 20
+        },
+        600:{
+            items:1,
+            nav:false,
+            margin: 0
+        },
+        700:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:false,
+            loop:true
         }
     }
 })
+
+ 
 </script>
 </body>
 
