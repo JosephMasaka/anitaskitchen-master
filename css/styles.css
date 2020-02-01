@@ -375,8 +375,8 @@ button[type=button]{
 
 
 .item {
-    height: 25rem;
-    width: 25rem;
+    height: 16rem;
+    width: 16rem;
 }
 
 .owl-carousel:first-child {

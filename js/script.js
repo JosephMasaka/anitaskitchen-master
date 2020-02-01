@@ -9,7 +9,8 @@ $('.span-bars').click(function(){
 
 /* tab active toggle class */
 
-const listItems = document.querySelectorAll('.nav-item');const tabContentItems = document.querySelectorAll('.tab-items');
+const listItems = document.querySelectorAll('.nav-item');
+const tabContentItems = document.querySelectorAll('.tab-items');
 
 
 
